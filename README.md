@@ -5,7 +5,7 @@
 <img height=200px src= "https://github.com/ACM-Thapar/CS_COURSE_GUIDE/blob/master/acm%20logo.png">
 
 
-<h1>GITHUB-VISUALIZER</h1>
+<h1>MEMBER-DASHBOARD</h1>
 
 <a href=""><img src="https://github.com/aritraroy/social-icons/blob/master/medium-icon.png?raw=true" width="60"></a>
 <a href=""><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a>
