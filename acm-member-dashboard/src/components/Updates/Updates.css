@@ -1,0 +1,94 @@
+
+.Updates{
+    margin-top: -50px;
+    width: 85%;
+    background: white;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    gap: 1rem;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.update{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-container{
+    justify-content: space-between;
+    display: flex;
+    
+    
+}
+.skill-box{
+    height: 75px;
+}
+
+    
+
+.second {
+    margin-top: 10px;
+}
+
+
+
+.skill-container > button{
+    
+    padding: 5px 10px;
+    cursor: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #9CC4F5;
+}
+
+
+
+.update>img{    
+    margin-left: 90px;
+    margin-top: -50px;
+    width: 5.2rem;
+    height: 5.2rem;
+}
+
+.noti>div>span:nth-of-type(1){
+    font-weight: bold;
+    text-align: center;
+    color: #5596E6;
+}
+
+.banner {
+    height: 130px;
+    background-color: #7FA8E5;
+    border-radius: 10px;
+}
+
+.banner > img{
+    height: 130px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.details > .name{
+    font-size: 20px;
+}
+
+.details > p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #5596E6;
+}
+
+.about-box{
+    padding: 5px;
+    border: 1px solid #5596E6;
+    border-radius: 10px;
+}
