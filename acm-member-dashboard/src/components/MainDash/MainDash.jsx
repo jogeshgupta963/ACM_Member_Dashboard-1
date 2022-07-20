@@ -10,10 +10,13 @@ const MainDash = () => {
     <div className="MainDash">
       <h1>Hello Tushar</h1>
       <h6>Welcome Back!</h6>
-      <h1 className="active-course">Active Bootcamps</h1>
+      <div className="activecontainer">
+        <h1 className="active-course">Active Bootcamps</h1>
+        <h5>See all</h5>
+      </div>
 
       <Cards />
-      
+      <br />
       <Github />
       <Table />
     </div>

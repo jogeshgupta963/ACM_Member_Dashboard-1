@@ -7,16 +7,18 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
+import img2 from "../../imgs/img2.png"; 
+import img1 from "../../imgs/Rectangle2.png";
 
 function createData(name, trackingId, date, status) {
   return { name, trackingId, date, status };
 }
 
 const rows = [
-  createData("Lasania Chiken Fri", 1, "Rishika", 100),
-  createData("Big Baza Bang ", 2, "Tushar", 99),
-  createData("Mouth Freshner", 3, "Yashvi", 98),
-  createData("Cupcake", 4, "Harman", 97),
+  createData(img1, 1, "Rishika", 100),
+  createData(img2, 2, "Tushar", 99),
+  createData(img1, 3, "Yashvi", 98),
+  createData(img2, 4, "Harman", 97),
 ];
 
 
@@ -67,7 +69,7 @@ export default function BasicTable() {
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    {row.name}
+                    <img src={row.name} className="imgs" alt="img" />
                   </TableCell>
                   <TableCell align="left">{row.trackingId}</TableCell>
                   <TableCell align="left">{row.date}</TableCell>

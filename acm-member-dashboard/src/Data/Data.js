@@ -59,7 +59,7 @@ export const cardsData = [
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,
-    value: "25,970",
+    value: "Web dev",
     png: UilUsdSquare,
     series: [
       {
@@ -75,7 +75,7 @@ export const cardsData = [
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 80,
-    value: "14,270",
+    value: "App Dev",
     png: UilMoneyWithdrawal,
     series: [
       {
@@ -92,7 +92,7 @@ export const cardsData = [
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 60,
-    value: "4,270",
+    value: "UI/UX",
     png: UilClipboardAlt,
     series: [
       {
