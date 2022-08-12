@@ -21,6 +21,7 @@
     "react-github-contributions-component": "^0.2.0",
     "react-scripts": "5.0.0",
     "react-social-icons": "^5.14.0",
+    "sass": "^1.54.4",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -46,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0"
   }
 }

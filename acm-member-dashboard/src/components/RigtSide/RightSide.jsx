@@ -1,5 +1,4 @@
 import React from "react";
-import CustomerReview from "../CustomerReview/CustomerReview";
 import Updates from "../Updates/Updates";
 import { UserCard, RepoCard } from 'react-github-cards/dist/medium';
 import 'react-github-cards/dist/medium.css';
@@ -13,7 +12,9 @@ const RightSide = () => {
         <Updates />
       </div>
       <div>
-      <UserCard username="Tusharbecoding" />
+      <UserCard username="Tusharbecoding" className="medium-theme github-card header"/> </div>
+      <div>
+      <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
       </div>
     </div>
   );
