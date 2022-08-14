@@ -37,7 +37,7 @@ export const SidebarData = [
   
   {
     icon: UilChart,
-    heading: 'Certificates'
+    heading: 'Achievements'
   },
 
   {

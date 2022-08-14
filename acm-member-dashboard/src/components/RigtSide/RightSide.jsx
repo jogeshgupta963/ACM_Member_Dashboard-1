@@ -14,7 +14,7 @@ const RightSide = () => {
       <div>
       <UserCard username="Tusharbecoding" className="medium-theme github-card header"/> </div>
       <div>
-      <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
+      <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" className="medium-theme github-card header important" />
       </div>
     </div>
   );

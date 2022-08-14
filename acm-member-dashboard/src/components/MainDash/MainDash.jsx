@@ -12,7 +12,7 @@ const MainDash = () => {
       <h6>Welcome Back!</h6>
       <div className="activecontainer">
         <h1 className="active-course">Active Bootcamps</h1>
-        <h5>See all</h5>
+        
       </div>
 
       <Cards />
