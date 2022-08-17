@@ -8,6 +8,7 @@ import {
   UilSignOutAlt,
   UilMedal,
   UilCalender,
+  UilMobileAndroid,
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
@@ -48,6 +49,14 @@ export const SidebarData = [
     icon: UilCalender,
     heading: 'Calendar'
   },
+  {
+    icon: UilMobileAndroid,
+    heading: 'Web Development'
+  },
+  {
+    icon: UilMobileAndroid,
+    heading: 'App Development'
+  },
 ];
 
 // Analytics Cards Data
@@ -56,7 +65,7 @@ export const cardsData = [
     title: "Sales",
     color: {
       backGround: "white",
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,
     value: "Web dev",
@@ -72,7 +81,7 @@ export const cardsData = [
     title: "Revenue",
     color: {
       backGround: "white",
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 80,
     value: "App Dev",
@@ -89,7 +98,7 @@ export const cardsData = [
     color: {
       backGround:
         "white",
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 60,
     value: "UI/UX",

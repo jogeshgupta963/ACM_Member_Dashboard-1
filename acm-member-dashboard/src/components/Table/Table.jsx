@@ -17,8 +17,7 @@ function createData(name, trackingId, date, status) {
 const rows = [
   createData(img1, 1, "Rishika", 100),
   createData(img2, 2, "Tushar", 99),
-  createData(img1, 3, "Yashvi", 98),
-  createData(img2, 4, "Harman", 97),
+  
 ];
 
 
@@ -48,7 +47,7 @@ const makeStyle=(status)=>{
 export default function BasicTable() {
   return (
       <div className="Table">
-      <h1>Leaderboard</h1>
+      <h1>Announcements</h1>
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029", borderRadius: 10 }}

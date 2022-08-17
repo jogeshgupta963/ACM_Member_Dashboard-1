@@ -4,8 +4,8 @@ import './Github.css'
 
 const Github = () => {
   return (
-    <div className="container">
-    <GitHubCalendar username="Tusharbecoding"  style={{marginLeft: 20, marginTop: 20}} />
+    <div className="gContainer">
+    <GitHubCalendar username="Tusharbecoding"  style={{display: 'flex',flexDirection: 'column',position:'relative', top: '18%', width: '99%', left: '0.5%'}} />
     </div>
   )
 }

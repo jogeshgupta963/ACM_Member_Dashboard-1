@@ -1,7 +1,9 @@
-.container{
+.gContainer{
+    display: flex;
+    position: relative;
     background-color: white;
     height: 17%;
     border: 1px solid white;
     border-radius: 10px;
-    
+    bottom: 20%;
 }
