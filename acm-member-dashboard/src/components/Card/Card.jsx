@@ -32,7 +32,7 @@ function CompactCard({ param, setExpanded }) {
         boxShadow: param.color.boxShadow,
       }}
       layoutId="expandableCard"
-      onClick={setExpanded}
+      
     >
       <div className="radialBar">
         <CircularProgressbar
@@ -113,7 +113,7 @@ function ExpandedCard({ param, setExpanded }) {
       layoutId="expandableCard"
     >
       <div style={{ alignSelf: "flex-end", cursor: "pointer", color: "white" }}>
-        <UilTimes onClick={setExpanded} />
+        <UilTimes  />
       </div>
         <span>{param.title}</span>
       <div className="chartContainer">

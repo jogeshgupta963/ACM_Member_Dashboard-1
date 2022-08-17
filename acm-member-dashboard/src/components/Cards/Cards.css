@@ -1,7 +1,9 @@
 .Cards {
   display: flex;
+  position: relative;
   gap: 10px;
-  margin-top: -40px;
+  margin-top: -100px;
+  bottom: 19%;
 }
 .parentContainer{
   width: 100%;

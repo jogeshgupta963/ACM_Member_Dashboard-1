@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../Cards/Cards";
-import Table from "../Table/Table";
+import Announcements from "../Announcements/Announcements";
 import Github from "../Github/Github";
 
 import "./MainDash.css";
@@ -8,17 +8,13 @@ import "./MainDash.css";
 const MainDash = () => {
   return (
     <div className="MainDash">
-      <h1>Hello Tushar</h1>
-      <h6>Welcome Back!</h6>
-      <div className="activecontainer">
-        <h1 className="active-course">Active Bootcamps</h1>
-        
-      </div>
-
-      <Cards />
-      <br />
+      <h1 className="name">Hello Tushar</h1>
+      <h1 className="announcements">Announcements</h1>
+      <Announcements />
+      <h1 className="activeBootcamps">Active Bootcamps</h1>
+      <Cards /> 
       <Github />
-      <Table />
+      
     </div>
   );
 };

@@ -6,24 +6,27 @@
     margin-left: 60px;
 }
 
-.activecontainer {
+
+
+.name{
     display: flex;
-    flex-direction: row;
+    position: relative;
+    color: #3D70B2;
+    bottom: 5%;
 }
 
-.activecontainer > h5 {
-    margin-top: 35px;
-    margin-left: 500px;
+.announcements{
+    display: flex;
+    position: relative;
     color: #3D70B2;
+    bottom: 11%;    
 }
 
-.activecontainer > h1 {
+.activeBootcamps{
+    display: flex;
+    position: relative;
     color: #3D70B2;
-}
-
-.MainDash > h1{
-    color: #3D70B2;
-    margin-top: 10px;
+    bottom: 21%;    
 }
 
 .MainDash > h6 {
