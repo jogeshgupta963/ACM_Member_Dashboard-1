@@ -3,7 +3,7 @@ import Updates from "../Updates/Updates";
 import { RepoCard } from 'react-github-cards/dist/medium';
 import 'react-github-cards/dist/medium.css';
 import "./RightSide.css";
-
+// <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
 const RightSide = () => {
   return (
     <div className="RightSide">
@@ -11,7 +11,7 @@ const RightSide = () => {
         <Updates />
       </div>
       <div className="csCourse">
-      <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
+      
       </div>
     </div>
   );

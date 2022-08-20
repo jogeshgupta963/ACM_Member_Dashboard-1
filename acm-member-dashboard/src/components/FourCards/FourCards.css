@@ -1,0 +1,30 @@
+.FourCards {
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 20px;
+    margin-top: -100px;
+    bottom: 3%;
+  }
+  .parentContainer{
+    width: 100%;
+  }
+  
+  
+  
+  @media screen and (max-width: 1200px) {
+    .Cards{
+      flex-direction: column;
+    }
+    .parentContainer{
+      height: 9rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px)
+  {
+    .Cards{
+      width: 90%;
+    }
+  }
+  

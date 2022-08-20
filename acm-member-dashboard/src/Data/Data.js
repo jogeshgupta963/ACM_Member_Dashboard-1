@@ -112,6 +112,78 @@ export const cardsData = [
   },
 ];
 
+export const fourCardsData = [
+  {
+    title: "Sales",
+    color: {
+      backGround: "white",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "Badges",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Sales",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+  {
+    title: "Revenue",
+    color: {
+      backGround: "white",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 80,
+    value: "Projects",
+    png: UilMoneyWithdrawal,
+    series: [
+      {
+        name: "Revenue",
+        data: [10, 100, 50, 70, 80, 30, 40],
+      },
+    ],
+  },
+
+];
+
+export const twoCardsData = [
+  {
+    title: "Sales",
+    color: {
+      backGround: "white",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 70,
+    value: "Badges",
+    png: UilUsdSquare,
+    series: [
+      {
+        name: "Sales",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+    ],
+  },
+  {
+    title: "Revenue",
+    color: {
+      backGround: "white",
+      //boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 80,
+    value: "Projects",
+    png: UilMoneyWithdrawal,
+    series: [
+      {
+        name: "Revenue",
+        data: [10, 100, 50, 70, 80, 30, 40],
+      },
+    ],
+  },
+
+];
+
 // Recent Update Card Data
 export const UpdatesData = [
   {
