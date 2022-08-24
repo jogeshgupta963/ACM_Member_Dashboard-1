@@ -9,6 +9,7 @@ import "./MainDash.css";
 
 const MainDash = () => {
   return (
+    
     <div className="MainDash">
       <h1 className="name">Hello Tushar</h1>
       <h1 className="announcements">Announcements</h1>
@@ -20,6 +21,7 @@ const MainDash = () => {
       <FourCards />
       <TwoCards />
     </div>
+ 
   );
 };
 
