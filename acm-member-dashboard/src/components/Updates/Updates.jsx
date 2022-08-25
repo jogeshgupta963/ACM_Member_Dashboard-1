@@ -2,9 +2,11 @@ import React from "react";
 import "./Updates.css";
 import { UpdatesData } from "../../Data/Data";
 import { SocialIcon } from 'react-social-icons';
+import { useSelector } from "react-redux";
 
 
 const Updates = () => {
+  const {user} = useSelector(state=>state.user)
   return (
     <div className="Updates">
       {UpdatesData.map((update) => {
@@ -17,10 +19,10 @@ const Updates = () => {
             <img src={update.img} alt="profile" />
             <div className="noti">
               <div className="details" style={{marginBottom: '0.5rem'}}>
-                <span className="name">{update.name}</span>
+                <span className="name">{user.name}</span>
                 <p>About</p>
                 <div className="about-box">
-                <span className="about"> {update.about}</span></div>
+                <span className="about"> {user.about}</span></div>
                 <p>Skill Set</p>
                 <div className="skill-box">
                 <div className="skill-container">

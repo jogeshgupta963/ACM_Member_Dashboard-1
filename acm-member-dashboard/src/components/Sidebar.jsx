@@ -5,12 +5,11 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+import Cookies from "js-cookie";
 
 const Sidebar = () => {
-  const [selected, setSelected] = useState(0);
-
   const [expanded, setExpaned] = useState(true)
-
+  const [selected, setSelected] = useState(0);
   const sidebarVariants = {
     true: {
       left : '0'
@@ -20,8 +19,12 @@ const Sidebar = () => {
     }
   }
   console.log(window.innerWidth)
+  
   return (
     <>
+    
+
+        
       <div className="bars" style={expanded?{left: '60%'}:{left: '5%'}} onClick={()=>setExpaned(!expanded)}>
         <UilBars />
       </div>
@@ -36,7 +39,7 @@ const Sidebar = () => {
         {SidebarData.map((item, index) => {
           return (
             <div
-              className={selected === index ? "menuItem active" : "menuItem"}
+            className={selected === index ? "menuItem active" : "menuItem"}
               key={index}
               onClick={() => setSelected(index)}
             >
@@ -51,6 +54,7 @@ const Sidebar = () => {
         </div>
       </div>
     </motion.div>
+    
     </>
   );
 };
