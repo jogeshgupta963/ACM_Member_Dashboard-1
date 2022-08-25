@@ -16,6 +16,7 @@ const Cards = () => {
               barValue={card.barValue}
               value={card.value}
               png={card.png}
+              time={card.time}
               series={card.series}
               
             />
