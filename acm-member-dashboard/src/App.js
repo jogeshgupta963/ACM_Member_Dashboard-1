@@ -1,19 +1,41 @@
+import Cookies from 'js-cookie';
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import MainDash from './components/MainDash/MainDash';
 import RightSide from './components/RigtSide/RightSide';
 import Sidebar from './components/Sidebar';
-// import Logins from './pages/login/Login';
+import Logins from './pages/login/Login';
+
+import { Outlet } from 'react-router';
+
+import React from 'react'
+
+function Nav() {
+  return (
+    <div> 
+      <div className="App">
+      <div className="AppGlass">
+
+      <Sidebar/><Outlet/><RightSide/> 
+      </div>
+      </div>
+      </div>
+  )
+}
+
+
 
 function App() {
   return (
-    // <Logins />
-    <div className="App">
-      <div className="AppGlass">
-        <Sidebar/>
-        <MainDash/>
-        <RightSide/>
-      </div>
-    </div>
+    <>
+    
+        <Routes>
+          <Route exact path="/login" element={<Logins/>}  />
+          <Route element={<Nav/>} >
+            <Route path='/' element={<MainDash/>} exact />
+          </Route>
+        </Routes>
+    </>
   );
 }
 

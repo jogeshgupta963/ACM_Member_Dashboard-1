@@ -1,8 +1,35 @@
 import './Login.css';
 import acmlogo from "../../imgs/acmlogo.png";
+import axios from 'axios';
+import { useRef } from 'react';
+import { useDispatch } from 'react-redux';
+import { getUser } from '../../redux/user';
+import {  Navigate, useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
 function Logins() {
+  const email = useRef('')
+  const password=useRef('')
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const handleSubmit= async(e)=>{
+    e.preventDefault();
+    try {
+      const {data} = await axios.post('/auth/login',{
+        email:email.current.value,
+        password:password.current.value
+      })
+      dispatch(getUser(data))
+      navigate('/')
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   return (
+    <>
+    {Cookies.get('JWT') && <Navigate to="/" /> }
     <div className="main">
      <div className="sub-main">
        <div>
@@ -18,14 +45,14 @@ function Logins() {
            <h1>Login Page</h1>
            <div className = "inputs">
              
-             <input type="email" placeholder="Email id" className="name"/>
+             <input ref={email} type="email" placeholder="Email id" className="name"/>
            </div>
            <div className="second-input inputs">
              
-             <input type="password" placeholder="Password" className="name"/>
+             <input ref={password} type="password" placeholder="Password" className="name"/>
            </div>
           <div className="login-button">
-          <button>Login</button>
+          <button onClick={handleSubmit} >Login</button>
           </div>
            
             <p className="link">
@@ -39,6 +66,7 @@ function Logins() {
 
      </div>
     </div>
+    </>
   );
 }
 

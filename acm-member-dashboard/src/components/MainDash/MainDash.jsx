@@ -6,11 +6,15 @@ import Announcements from "../Announcements/Announcements";
 import Github from "../Github/Github";
 
 import "./MainDash.css";
+import { useSelector } from "react-redux";
 
 const MainDash = () => {
+  const {user} = useSelector(state=>state.user)
+  console.log(user)
   return (
+    
     <div className="MainDash">
-      <h1 className="name">Hello Tushar</h1>
+      <h1 className="name">Hello {user.name}</h1>
       <h1 className="announcements">Announcements</h1>
       <Announcements />
       <h1 className="activeBootcamps">Active Bootcamps</h1>
@@ -20,6 +24,7 @@ const MainDash = () => {
       <FourCards />
       <TwoCards />
     </div>
+ 
   );
 };
 
