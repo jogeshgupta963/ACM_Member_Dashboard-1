@@ -22,6 +22,7 @@ const Updates = () => {
                 <span className="name">{user.name}</span>
                 <p>About</p>
                 <div className="about-box">
+
                 <span className="about"> {user.about}</span></div>
                 <p>Skill Set</p>
                 <div className="skill-box">
@@ -36,6 +37,7 @@ const Updates = () => {
                   <button className="btn">{update.skills[5]}</button>
                 </div>
                 </div>
+
                 <p>Socials</p>
                 <div className="social-icons">
                   <SocialIcon url="https://twitter.com/TusharC29050031" style={{height: 40, width: 40}} />

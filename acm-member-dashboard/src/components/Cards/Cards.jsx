@@ -19,12 +19,15 @@ const Cards = () => {
         return (
           <div className="parentContainer" key={id}>
             <Card
-              
-              color={{backGround: "white",}}
-              barValue={70}
-              value={card}
-              png={UilUsdSquare}
-              // series={card.series}
+
+              title={card.title}
+              color={card.color}
+              barValue={card.barValue}
+              value={card.value}
+              png={card.png}
+              time={card.time}
+              series={card.series}
+
               
             />
           </div>
