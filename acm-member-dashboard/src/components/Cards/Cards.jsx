@@ -15,7 +15,7 @@ const Cards = () => {
   const {user} = useSelector(state=>state.user)
   return (
     <div className="Cards">
-      {user.bootcamps.map((card, id) => {
+      {user.bootcamps && user.bootcamps.map((card, id) => {
         return (
           <div className="parentContainer" key={id}>
             <Card

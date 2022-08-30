@@ -5,19 +5,19 @@ const Announcements = () => {
   return (
     <div className="aContainer">
       <div className="section1 section">
-        <p>Section</p>
-        
-        <p>2000</p>
+        <h4>All Society Meeting</h4>
+        <p className="info">6pm 28th August</p>
+        <p>TAN 102</p>
       </div>
       <div className="section2 section">
-        <p>Section</p>
-        
-        <p>2000</p>
+        <h4>Web Dev Bootcamp</h4>
+        <p className="info">6pm 28th August</p>
+        <p>TAN 102</p>
       </div>
       <div className="section3 section">
-        <p>Section</p>
-        
-        <p>2000</p>
+        <h4>App Dev Bootcamp</h4>
+        <p className="info">6pm 28th August</p>
+        <p>TAN 102</p>
       </div>
     </div>
   )
