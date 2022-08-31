@@ -6,6 +6,7 @@
     padding-bottom: 90px;
     background-color: #9ecafd;
     font-family: 'Inter', sans-serif;
+    height: 80vh;
   }
   h1{
     color: #3D70B2;
@@ -47,6 +48,8 @@
       outline: none;
       background-color: #fff;
       color: #3D70B2;
+      
+      
   }
 
   .inputs {
@@ -89,3 +92,42 @@
       color: #7FA8E5;
       text-decoration: none;
    }
+
+@media (max-width: 1135px) {
+  .profile{
+    height: 80px;
+    width: 200px;
+  }
+  
+  .sub-main{
+    width: 90%;
+  }
+}   
+@media (max-width: 428px) {
+  input{
+    width: 280px;
+        
+  }
+  button{
+    width: 300px;
+  }
+}  
+@media (max-width: 355px) {
+  input{
+    width: 230px;
+        
+  }
+  button{
+    width: 250px;
+  }
+} 
+
+@media (max-width: 300px) {
+  input{
+    width: 175px;
+        
+  }
+  button{
+    width: 200px;
+  }
+} 
