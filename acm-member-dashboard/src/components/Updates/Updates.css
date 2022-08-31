@@ -1,4 +1,3 @@
-
 .Updates{
     display: flex;
     position: relative;
@@ -8,10 +7,12 @@
     padding: 1rem;
     gap: 1rem;
     height: 550px;
-    bottom: 21%;
+    bottom: 6%;
     flex-direction: column;
     font-size: 13px;
 }
+
+
 
 .update{
     display: flex;
@@ -19,15 +20,8 @@
     gap: 0.5rem;
 }
 
-.skill-container{
-    justify-content: space-between;
-    display: flex;
-    
-    
-}
-.skill-box{
-    height: 75px;
-}
+
+
 
     
 
@@ -37,14 +31,7 @@
 
 
 
-.skill-container > button{
-    
-    padding: 5px 10px;
-    cursor: auto;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #9CC4F5;
-}
+
 
 
 
@@ -92,4 +79,14 @@
     padding: 5px;
     border: 1px solid #5596E6;
     border-radius: 10px;
+}
+
+textarea{
+    resize: none;
+    color: #5596E6;
+}
+
+.about{
+    border: none;
+    outline: none;
 }
