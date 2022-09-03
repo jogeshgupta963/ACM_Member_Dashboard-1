@@ -8,11 +8,10 @@
 
 
 
-.name{
+.name-maindash{
     display: flex;
     position: relative;
     color: #3D70B2;
-    
 }
 
 .announcements{
@@ -46,7 +45,7 @@
 
 @media screen and (max-width: 1200px) {
     .MainDash{
-        justify-content:flex-start;
+        
         margin-top: 2rem;
     }
 }
