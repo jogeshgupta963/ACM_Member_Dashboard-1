@@ -3,19 +3,34 @@
     flex-direction: column;
     /* padding-top: 1rem; */
     width: 95%;
-    justify-content: space-evenly;
-    
+    justify-content:left;
+    gap: 150px;
 }
 
 .csCourse{
     display: flex;
     position: relative;
-    bottom: 12%;
+    
+}
+
+.medium-theme .repo-card .header{
+    background: black !important;
+    border-radius: 10px 10px 0px 0px;  
+    width: 100%; 
+}
+
+.medium-theme .github-card .content .description{
+    width: 90%;
+}
+
+.medium-theme .github-card{
+    border-radius: 10px;
+    width: 97% ;
 }
 
 @media screen and (max-width: 1200px) {
     .RightSide{
-        justify-content: flex-start;
+        
         margin-top: 3rem;
     }
 }

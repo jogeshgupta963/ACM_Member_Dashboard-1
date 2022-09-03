@@ -1,9 +1,8 @@
 import React from "react";
 import "./Updates.css";
 import { UpdatesData } from "../../Data/Data";
-import { SocialIcon } from 'react-social-icons';
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
 import { useSelector } from "react-redux";
-
 
 const Updates = () => {
   const {user} = useSelector(state=>state.user)
@@ -19,7 +18,7 @@ const Updates = () => {
             <img src={update.img} alt="profile" />
             <div className="noti">
               <div className="details" style={{marginBottom: '0.5rem'}}>
-                <span className="name">{user.name}</span>
+                <span className="name-updates" style={{marginRight: '0.2rem'}}>{user.name}</span>
                 <p>About</p>
                 <div className="about-box">
                 <textarea name="about" className="about" cols="30" rows="10">{user.about}</textarea>
@@ -28,10 +27,10 @@ const Updates = () => {
 
                 <p>Socials</p>
                 <div className="social-icons">
-                  <SocialIcon url="https://twitter.com/TusharC29050031" style={{height: 40, width: 40,}} />
-                  <SocialIcon url="https://github.com/Tusharbecoding" style={{height: 40, width: 40, marginLeft: 10}} />
-                  <SocialIcon url="https://www.linkedin.com/in/tushar-chopra-960532215/" style={{height: 40, width: 40, marginLeft: 10}} />
-                  
+                  <a href="https://github.com/Tusharbecoding" rel="noreferrer" style={{color: 'black' }}><AiFillGithub style={{height: 40, width: 40,}} /></a>
+                  <a href="https://twitter.com/TusharC29050031" rel="noreferrer" style={{color: '#00acee' }}><AiFillTwitterCircle url="https://twitter.com/TusharC29050031" style={{height: 40, width: 40,}} /></a>
+                  <a href="https://www.linkedin.com/in/tushar-chopra-960532215/" rel="noreferrer" target="_blank" style={{color: '#0077b5' }}><AiFillLinkedin url="https://twitter.com/TusharC29050031" style={{height: 40, width: 40,}} /></a>
+                   
                 </div>
               </div>
                 <span>{update.time}</span>

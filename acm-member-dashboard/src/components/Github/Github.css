@@ -1,8 +1,10 @@
 .gContainer{
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    height: 17%;
+    height: 15%;
     border: 1px solid white;
     border-radius: 10px;
     bottom: 4%;

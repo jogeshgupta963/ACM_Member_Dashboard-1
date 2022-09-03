@@ -43,14 +43,14 @@ const Sidebar = () => {
               key={index}
               onClick={() => setSelected(index)}
             >
-              <item.icon />
+              <item.icon className="icon" />
               <span>{item.heading}</span>
             </div>
           );
         })}
         {/* signoutIcon */}
         <div className="menuItem">
-          <UilSignOutAlt />
+          <UilSignOutAlt className="icon"/>
         </div>
       </div>
     </motion.div>
