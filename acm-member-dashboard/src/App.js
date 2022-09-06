@@ -10,7 +10,7 @@ import Badges from './pages/badges/Badges'
 import { Outlet } from 'react-router';
 
 import React from 'react'
-import axios from 'axios';
+import Calendar from './pages/calendar/Calendar';
 
 function Nav() {
   return (

@@ -28,6 +28,10 @@
     width: 97% ;
 }
 
+.medium-theme .github-card ul{
+    border-top: none;
+}
+
 @media screen and (max-width: 1200px) {
     .RightSide{
         
