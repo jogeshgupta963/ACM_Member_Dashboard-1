@@ -5,7 +5,7 @@ import './Github.css'
 const Github = () => {
   return (
     <div className="gContainer">
-      <GitHubCalendar username="Tusharbecoding"  />
+      <GitHubCalendar username="Tusharbecoding" />
     </div>
   )
 }

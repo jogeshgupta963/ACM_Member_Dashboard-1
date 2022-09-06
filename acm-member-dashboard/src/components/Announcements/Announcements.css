@@ -3,18 +3,18 @@
     flex-direction: row;
     gap: 50px;
     position: relative;
-    background-color: #ffffff;
+    background-color: #1e1b5b;
     height: 14%;
-    box-shadow: 2px 2px 5px #bed8ff;
+    box-shadow: 2px 2px 5px #0e1f3a;
     border-radius: 10px;
     bottom: 6%;
-    color: #7FA8E5;
+    color: #c7c4f6;
     justify-content: center;
     align-items: center;
 }
 
 .section1, .section2{
-    border-right: 1px solid #7FA8E5;
+    border-right: 1px solid #c7c4f6;
 }
 
 .section1{

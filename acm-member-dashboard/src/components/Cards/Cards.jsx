@@ -3,11 +3,12 @@ import "./Cards.css";
 import { cardsData } from "../../Data/Data";
 
 // Sidebar imports
-import {
+// import {
   
-  UilUsdSquare
-} from "@iconscout/react-unicons";
+//   UilUsdSquare
+// } from "@iconscout/react-unicons";
 
+import { AiFillGithub } from 'react-icons/ai';
 import Card from "../Card/Card";
 import { useSelector } from "react-redux";
 
@@ -28,10 +29,10 @@ const Cards = () => {
               // time={card.time}
               // series={card.series}
 
-              color={{ backGround: "white" }}
+              color={{ backGround: "#1e1b5b" }}
               barValue={70}
               value={card}
-              png={UilUsdSquare}
+              png={AiFillGithub}
             />
           </div>
         );

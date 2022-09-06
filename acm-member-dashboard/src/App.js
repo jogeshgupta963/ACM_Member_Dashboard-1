@@ -9,6 +9,7 @@ import Logins from './pages/login/Login';
 import { Outlet } from 'react-router';
 
 import React from 'react'
+import Calendar from './pages/calendar/Calendar';
 
 function Nav() {
   return (
