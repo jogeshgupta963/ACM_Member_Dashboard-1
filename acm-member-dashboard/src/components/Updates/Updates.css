@@ -2,7 +2,8 @@
     display: flex;
     position: relative;
     width: 85%;
-    background: white;
+    background: rgb(11, 27, 55);
+    box-shadow: 2px 2px 2px rgb(11, 27, 55);
     border-radius: 0.7rem;
     padding: 1rem;
     gap: 1rem;
@@ -72,6 +73,7 @@
 textarea{
     resize: none;
     color: #5596E6;
+    background: transparent;
 }
 
 .about{

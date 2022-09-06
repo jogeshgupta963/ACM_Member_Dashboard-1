@@ -20,8 +20,9 @@ const Updates = () => {
               <div className="details" style={{marginBottom: '0.5rem'}}>
                 <span className="name-updates" style={{marginRight: '0.2rem'}}>{user.name}</span>
                 <p>About</p>
-                <div className="about-box">
-                <textarea name="about" className="about" cols="30" rows="10">{user.about}</textarea>
+                <div className="about-box" >
+          
+                <textarea name="about" className="about" disabled cols="30" rows="10">{user.about}</textarea>
                 </div>
                 
 

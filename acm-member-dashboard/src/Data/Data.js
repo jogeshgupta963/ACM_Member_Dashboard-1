@@ -10,7 +10,7 @@ import {
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
-import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
+import { UilUsdSquare, UilMoneyWithdrawal, UilCode } from "@iconscout/react-unicons";
 //import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 // Recent Card Imports
@@ -47,14 +47,14 @@ export const SidebarData = [
     icon: UilCalender,
     heading: 'Calendar'
   },
-  {
-    icon: UilMobileAndroid,
-    heading: 'Web Development'
-  },
-  {
-    icon: UilMobileAndroid,
-    heading: 'App Development'
-  },
+  // {
+  //   icon: UilMobileAndroid,
+  //   heading: 'Web Development'
+  // },
+  // {
+  //   icon: UilMobileAndroid,
+  //   heading: 'App Development'
+  // },
 ];
 
 // Analytics Cards Data
@@ -117,7 +117,7 @@ export const fourCardsData = [
   {
     title: "Sales",
     color: {
-      backGround: "white",
+      backGround: "#1e1b5b",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,
@@ -133,7 +133,7 @@ export const fourCardsData = [
   {
     title: "Revenue",
     color: {
-      backGround: "white",
+      backGround: "#1e1b5b",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 80,
@@ -153,7 +153,7 @@ export const twoCardsData = [
   {
     title: "Sales",
     color: {
-      backGround: "white",
+      backGround: "#1e1b5b",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,
@@ -169,7 +169,7 @@ export const twoCardsData = [
   {
     title: "Revenue",
     color: {
-      backGround: "white",
+      backGround: "#1e1b5b",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 80,

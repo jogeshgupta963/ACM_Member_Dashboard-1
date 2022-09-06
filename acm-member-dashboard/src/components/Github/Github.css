@@ -3,9 +3,9 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #1e1b5b;
     height: 15%;
-    border: 1px solid white;
+    color: rgb(184, 203, 248);
     border-radius: 10px;
     bottom: 4%;
 }
