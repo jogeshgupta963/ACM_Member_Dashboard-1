@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Cards from "../Cards/Cards";
 import FourCards from "../FourCards/FourCards";
 import TwoCards from "../TwoCards/TwoCards";
@@ -7,24 +7,63 @@ import Github from "../Github/Github";
 
 import "./MainDash.css";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import axios from "axios";
 
 const MainDash = () => {
-  const {user} = useSelector(state=>state.user)
-  console.log(user)
+  const { user } = useSelector((state) => state.user);
+  const [announcement, setAnnouncement] = useState([]);
+  const [projects, setProjects] = useState(0);
+
+  const cardUp = [
+    {
+      value: "Announcement",
+      count: announcement.length,
+    },
+    {
+      value: "Badges",
+      count: user.badges.length,
+    },
+  ];
+  const cardDown = [
+    {
+      value: "Certificates",
+      count: user.certificates.length,
+    },
+    {
+      value: "Projects",
+      count: projects,
+    },
+  ];
+
+  const fetchCount = async () => {
+    try {
+      const { data } = await axios.get("/announcement");
+      const project = await axios.get("project");
+      setAnnouncement(data);
+      setProjects(project.data.length);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    fetchCount();
+  }, []);
   return (
-    
     <div className="MainDash">
-      <h1 className="name-maindash" style={{fontSize: "2rem", }}>Hello {user.name}</h1>
+      <h1 className="name-maindash" style={{ fontSize: "2rem" }}>
+        Hello {user.name}
+      </h1>
       <h1 className="announcements">Announcements</h1>
-      <Announcements />
+      {announcement.length > 0 && <Announcements announcement={announcement} />}
       <h1 className="activeBootcamps">Active Bootcamps</h1>
-      <Cards /> 
+      <Cards />
       <Github />
       <h1 className="activities"></h1>
-      <FourCards />
-      <TwoCards />
+      <FourCards dashData={cardUp} />
+      <TwoCards dashData={cardDown} />
     </div>
- 
   );
 };
 

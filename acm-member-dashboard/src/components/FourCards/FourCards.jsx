@@ -1,27 +1,39 @@
 import React from "react";
 import "./FourCards.css";
 import { fourCardsData } from "../../Data/Data";
-
+import {
+  UilUsdSquare,
+  UilMoneyWithdrawal,
+  UilCode,
+} from "@iconscout/react-unicons";
 import FourCard from "../FourCard/FourCard";
 
-const FourCards = () => {
+const FourCards = ({ dashData }) => {
+  console.log(dashData);
   return (
     <div className="FourCards">
-      {fourCardsData.map((card, id) => {
-        return (
-          <div className="parentContainer" key={id}>
-            <FourCard
-              title={card.title}
-              color={card.color}
-              barValue={card.barValue}
-              value={card.value}
-              png={card.png}
-              series={card.series}
-              
-            />
-          </div>
-        );
-      })}
+      {dashData.length &&
+        dashData.map((card, id) => {
+          return (
+            <div className="parentContainer" key={id}>
+              <FourCard
+                title="Count"
+                color={{
+                  backGround: "#1e1b5b",
+                }}
+                barValue={card.count}
+                value={card.value}
+                png={UilUsdSquare}
+                series={[
+                  {
+                    name: "Expenses",
+                    data: [10, 25, 15, 30, 12, 15, 20],
+                  },
+                ]}
+              />
+            </div>
+          );
+        })}
     </div>
   );
 };
