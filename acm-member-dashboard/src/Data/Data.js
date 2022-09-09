@@ -24,28 +24,34 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Dashboard",
+    link: "/",
   },
   {
     icon: UilClipboardAlt,
     heading: "Projects",
+    link: "/projects",
   },
   {
     icon: UilUsersAlt,
     heading: "Announcements",
+    link: "/announcements",
   },
   
   {
     icon: UilChart,
-    heading: 'Achievements'
+    heading: 'Achievements',
+    link: "/achievements",
   },
 
   {
     icon: UilMedal,
-    heading: 'Badges'
+    heading: 'Badges',
+    link: "/badges",
   },
   {
     icon: UilCalender,
-    heading: 'Calendar'
+    heading: 'Calendar',
+    link: "/calendar",
   },
   // {
   //   icon: UilMobileAndroid,

@@ -34,6 +34,7 @@ function App() {
           <Route exact path="/login" element={<Logins/>}  />
           <Route element={<Nav/>} >
             <Route path='/' element={<MainDash/>} exact />
+            <Route path='/calendar' element={<Calendar/>} />
           </Route>
         </Routes>
     </>

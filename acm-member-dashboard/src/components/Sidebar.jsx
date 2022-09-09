@@ -7,7 +7,7 @@ import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [expanded, setExpaned] = useState(true)
@@ -46,7 +46,7 @@ const Sidebar = () => {
               onClick={() => setSelected(index)}
             >
               <item.icon className="icon" />
-              <span>{item.heading}</span>
+              <span><Link to={item.link}>{item.heading}</Link></span>
             </div>
           );
         })}
