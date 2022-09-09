@@ -10,7 +10,11 @@ import {
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
-import { UilUsdSquare, UilMoneyWithdrawal, UilCode } from "@iconscout/react-unicons";
+import {
+  UilUsdSquare,
+  UilMoneyWithdrawal,
+  UilCode,
+} from "@iconscout/react-unicons";
 //import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 // Recent Card Imports
@@ -36,7 +40,7 @@ export const SidebarData = [
     heading: "Announcements",
     link: "/announcements",
   },
-  
+
   {
     icon: UilChart,
     heading: 'Achievements',
@@ -66,7 +70,6 @@ export const SidebarData = [
 // Analytics Cards Data
 export const cardsData = [
   {
-  
     color: {
       backGround: "white",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
@@ -83,7 +86,6 @@ export const cardsData = [
     ],
   },
   {
-    
     color: {
       backGround: "white",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
@@ -100,13 +102,11 @@ export const cardsData = [
     ],
   },
   {
-    
     color: {
-      backGround:
-        "white",
+      backGround: "white",
       //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
-    barValue: 60,
+    barValue: "60",
     value: "UI/UX",
     png: UilClipboardAlt,
     time: "11 hours",
@@ -124,7 +124,6 @@ export const fourCardsData = [
     title: "Sales",
     color: {
       backGround: "#1e1b5b",
-      //boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,
     value: "Badges",
@@ -152,7 +151,6 @@ export const fourCardsData = [
       },
     ],
   },
-
 ];
 
 export const twoCardsData = [
@@ -188,7 +186,6 @@ export const twoCardsData = [
       },
     ],
   },
-
 ];
 
 // Recent Update Card Data
@@ -197,7 +194,7 @@ export const UpdatesData = [
     banner: banner1,
     img: img1,
     name: "Tushar Chopra",
-    about: "I am a budding programmer with a knack for coding. Data Science is my passion and Web Development along with UI/UX designing my hobby. I have beginner to intermediate level knowledge in Python, JavaScript, HTML, CSS, React.js, MySQL, Node.js, Figma and some video editing too.",
-    
-  }
+    about:
+      "I am a budding programmer with a knack for coding. Data Science is my passion and Web Development along with UI/UX designing my hobby. I have beginner to intermediate level knowledge in Python, JavaScript, HTML, CSS, React.js, MySQL, Node.js, Figma and some video editing too.",
+  },
 ];
