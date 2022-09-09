@@ -5,6 +5,7 @@ import MainDash from './components/MainDash/MainDash';
 import RightSide from './components/RigtSide/RightSide';
 import Sidebar from './components/Sidebar';
 import Logins from './pages/login/Login';
+import Badges from './pages/badges/Badges'
 
 import { Outlet } from 'react-router';
 
@@ -29,11 +30,11 @@ function Nav() {
 function App() {
   return (
     <>
-    
-        <Routes>
+      <Routes>
           <Route exact path="/login" element={<Logins/>}  />
           <Route element={<Nav/>} >
             <Route path='/' element={<MainDash/>} exact />
+            <Route path="/badges" element={<Badges />}  />
           </Route>
         </Routes>
     </>
