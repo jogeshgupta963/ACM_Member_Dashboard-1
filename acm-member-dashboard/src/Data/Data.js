@@ -19,6 +19,7 @@ import {
 
 // Recent Card Imports
 import img1 from "../imgs/Rectangle2.png";
+import avatar from "../imgs/profile.png";
 //import img2 from "../imgs/img2.png";
 //import img3 from "../imgs/img3.png";
 import banner1 from "../imgs/banner1.jpg";
@@ -43,8 +44,8 @@ export const SidebarData = [
 
   {
     icon: UilChart,
-    heading: 'Achievements',
-    link: "/achievements",
+    heading: 'Certificates',
+    link: "/certificates",
   },
 
   {
@@ -57,6 +58,7 @@ export const SidebarData = [
     heading: 'Calendar',
     link: "/calendar",
   },
+  
   // {
   //   icon: UilMobileAndroid,
   //   heading: 'Web Development'
@@ -198,3 +200,11 @@ export const UpdatesData = [
       "I am a budding programmer with a knack for coding. Data Science is my passion and Web Development along with UI/UX designing my hobby. I have beginner to intermediate level knowledge in Python, JavaScript, HTML, CSS, React.js, MySQL, Node.js, Figma and some video editing too.",
   },
 ];
+
+export const CertificatesData = [
+  {
+    url: 'www.acmthapar.com',
+    img: avatar,
+    title: "Web Development",
+  }
+]

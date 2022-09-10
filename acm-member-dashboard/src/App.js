@@ -5,18 +5,17 @@ import MainDash from './components/MainDash/MainDash';
 import RightSide from './components/RigtSide/RightSide';
 import Sidebar from './components/Sidebar';
 import Logins from './pages/login/Login';
-
 import { Outlet } from 'react-router';
-
 import React from 'react'
 import Calendar from './pages/calendar/Calendar';
+
+import Certificates from './pages/certificates/Certificates';
 
 function Nav() {
   return (
     <div> 
       <div className="App">
       <div className="AppGlass">
-
       <Sidebar/><Outlet/><RightSide/> 
       </div>
       </div>
@@ -35,6 +34,7 @@ function App() {
           <Route element={<Nav/>} >
             <Route path='/' element={<MainDash/>} exact />
             <Route path='/calendar' element={<Calendar/>} />
+            <Route path='/certificates' element={<Certificates/>} />
           </Route>
         </Routes>
     </>

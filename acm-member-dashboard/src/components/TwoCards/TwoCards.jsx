@@ -6,7 +6,7 @@ import {
   UilMoneyWithdrawal,
   UilCode,
 } from "@iconscout/react-unicons";
-import TwoCard from "../Card/Card";
+import TwoCard from "../TwoCard/TwoCard";
 
 const TwoCards = ({ dashData }) => {
   return (

@@ -32,6 +32,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-social-icons": "^5.14.0",
+    "react-ui-cards": "^3.0.0",
     "sass": "^1.54.4",
     "web-vitals": "^2.1.0"
   },

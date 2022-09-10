@@ -27,7 +27,7 @@
 .CircularProgressbar-path {
   stroke: #7FA8E5 !important;
   stroke-width: 12px !important;
-  filter: drop-shadow(2px 4px 6px #7FA8E5);
+  
 }
 .CircularProgressbar-trail {
   display: none;
