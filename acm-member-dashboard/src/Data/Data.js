@@ -19,7 +19,7 @@ import {
 
 // Recent Card Imports
 import img1 from "../imgs/Rectangle2.png";
-import avatar from "../imgs/profile.png";
+import avatar from "../imgs/Rectangle2.png";
 //import img2 from "../imgs/img2.png";
 //import img3 from "../imgs/img3.png";
 import banner1 from "../imgs/banner1.jpg";

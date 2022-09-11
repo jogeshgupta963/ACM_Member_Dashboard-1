@@ -9,7 +9,6 @@ import {
 import FourCard from "../FourCard/FourCard";
 
 const FourCards = ({ dashData }) => {
-  console.log(dashData);
   return (
     <div className="FourCards">
       {dashData.length &&

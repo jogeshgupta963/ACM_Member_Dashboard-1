@@ -15,7 +15,7 @@ const MainDash = () => {
   const [announcement, setAnnouncement] = useState([]);
   const [projects, setProjects] = useState(0);
 
-  const cardUp = [
+  let cardUp = [
     {
       value: "Announcement",
       count: announcement.length,
@@ -25,7 +25,7 @@ const MainDash = () => {
       count: user.badges.length,
     },
   ];
-  const cardDown = [
+  let cardDown = [
     {
       value: "Certificates",
       count: user.certificates.length,
@@ -35,11 +35,11 @@ const MainDash = () => {
       count: projects,
     },
   ];
-
   const fetchCount = async () => {
     try {
       const { data } = await axios.get("/announcement");
-      const project = await axios.get("project");
+      const project = await axios.get("/project");
+      console.log(data);
       setAnnouncement(data);
       setProjects(project.data.length);
     } catch (err) {

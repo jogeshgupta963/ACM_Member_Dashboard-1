@@ -10,32 +10,33 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-  const [expanded, setExpaned] = useState(true)
+  const [expanded, setExpaned] = useState(true);
   const [selected, setSelected] = useState(0);
   const sidebarVariants = {
     true: {
-      left : '0'
+      left: "0",
     },
-    false:{
-      left : '-60%'
-    }
-  }
-  console.log(window.innerWidth)
-  const {user} = useSelector(state=>state.user)
+    false: {
+      left: "-60%",
+    },
+  };
+
+  const { user } = useSelector((state) => state.user);
   return (
     <>
-    
-
-        
-      <div className="bars" style={expanded?{left: '60%'}:{left: '5%'}} onClick={()=>setExpaned(!expanded)}>
+      <div
+        className="bars"
+        style={expanded ? { left: "60%" } : { left: "5%" }}
+        onClick={() => setExpaned(!expanded)}
+      >
         <UilBars />
       </div>
-    <motion.div className='sidebar'
-    variants={sidebarVariants}
-    animate={window.innerWidth<=768?`${expanded}`:''}
-    >
-      {/* logo */}
-      
+      <motion.div
+        className="sidebar"
+        variants={sidebarVariants}
+        animate={window.innerWidth <= 768 ? `${expanded}` : ""}
+      >
+        {/* logo */}
 
       <div className="menu">
         {SidebarData.map((item, index) => {
@@ -68,9 +69,7 @@ const Sidebar = () => {
         <div className="menuItem">
           <UilSignOutAlt className="icon"/>
         </div>
-      </div>
-    </motion.div>
-    
+      </motion.div>
     </>
   );
 };
