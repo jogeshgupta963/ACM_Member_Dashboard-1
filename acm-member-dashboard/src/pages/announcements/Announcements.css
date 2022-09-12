@@ -17,6 +17,7 @@ table td {
 }
 
 thead {
-  background-color: white;
+  background-color: #afcdf2;
   color: darkblue;
+  font-weight: 500;
 }
