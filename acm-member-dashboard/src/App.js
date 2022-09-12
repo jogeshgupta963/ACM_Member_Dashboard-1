@@ -11,6 +11,7 @@ import { Outlet } from 'react-router';
 
 import React from 'react'
 import Calendar from './pages/calendar/Calendar';
+import Announcements from './pages/announcements/Announcements';
 
 function Nav() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route element={<Nav/>} >
             <Route path='/' element={<MainDash/>} exact />
             <Route path="/badges" element={<Badges />}  />
+            <Route path="/announcements" element={<Announcements />}  />
           </Route>
         </Routes>
     </>
