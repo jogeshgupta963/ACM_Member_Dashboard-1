@@ -2,32 +2,16 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Badge from "../../components/Badge/Badge";
 import "./Badges.css";
-import axios from 'axios';
+import axios from "axios";
+import { useSelector } from "react-redux";
 // import {useSelector} from "react-redux"
 
 function Badges() {
-  // const {user} = useSelector(state=>state.user)
-  const [badgesItem, setBadgesItem] = useState([{}]);
-
-  const fetchBadge = async () => {
-    try
-    {
-      const {data} = await axios.get('/badge')
-      setBadgesItem(data)
-    }
-    catch(err)
-    {
-      console.log(err);
-    }
-  }
-
-  useEffect(() => {
-    fetchBadge()
-  }, [])
+  const { user } = useSelector((state) => state.user);
 
   return (
     <div className="Badges">
-      {badgesItem.map((badge) => {
+      {user.badges.map((badge) => {
         return <Badge description={badge.description} />;
       })}
     </div>
