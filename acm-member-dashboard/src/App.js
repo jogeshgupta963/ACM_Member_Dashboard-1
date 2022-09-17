@@ -10,6 +10,7 @@ import Badges from './pages/badges/Badges'
 import { Outlet } from 'react-router';
 import React from 'react'
 import Calendar from './pages/calendar/Calendar';
+import Announcements from './pages/announcements/Announcements';
 
 import Certificates from './pages/certificates/Certificates';
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='/calendar' element={<Calendar/>} />
             <Route path='/certificates' element={<Certificates/>} />
             <Route path="/badges" element={<Badges />}  />
+            <Route path="/announcements" element={<Announcements />}  />
           </Route>
         </Routes>
     </>
