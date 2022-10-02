@@ -23,12 +23,6 @@ const FourCards = ({ dashData }) => {
                 barValue={card.count}
                 value={card.value}
                 png={UilUsdSquare}
-                series={[
-                  {
-                    name: "Expenses",
-                    data: [10, 25, 15, 30, 12, 15, 20],
-                  },
-                ]}
               />
             </div>
           );

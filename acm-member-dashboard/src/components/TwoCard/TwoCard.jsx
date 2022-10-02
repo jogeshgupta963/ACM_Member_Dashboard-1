@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FourCard.css";
+import "./TwoCard.css";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { motion, AnimateSharedLayout } from "framer-motion";
@@ -8,7 +8,7 @@ import Chart from "react-apexcharts";
 
 // parent Card
 
-const FourCard = (props) => {
+const TwoCard = (props) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <AnimateSharedLayout>
@@ -124,4 +124,4 @@ function ExpandedCard({ param, setExpanded }) {
   );
 }
 
-export default FourCard;
+export default TwoCard;

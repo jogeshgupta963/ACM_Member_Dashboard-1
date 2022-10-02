@@ -19,6 +19,7 @@ import {
 
 // Recent Card Imports
 import img1 from "../imgs/Rectangle2.png";
+import avatar from "../imgs/Rectangle2.png";
 //import img2 from "../imgs/img2.png";
 //import img3 from "../imgs/img3.png";
 import banner1 from "../imgs/banner1.jpg";
@@ -28,29 +29,36 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Dashboard",
+    link: "/",
   },
   {
     icon: UilClipboardAlt,
     heading: "Projects",
+    link: "/projects",
   },
   {
     icon: UilUsersAlt,
     heading: "Announcements",
+    link: "/announcements",
   },
 
   {
     icon: UilChart,
-    heading: "Achievements",
+    heading: 'Certificates',
+    link: "/certificates",
   },
 
   {
     icon: UilMedal,
-    heading: "Badges",
+    heading: 'Badges',
+    link: "/badges",
   },
   {
     icon: UilCalender,
-    heading: "Calendar",
+    heading: 'Calendar',
+    link: "/calendar",
   },
+  
   // {
   //   icon: UilMobileAndroid,
   //   heading: 'Web Development'
@@ -192,3 +200,11 @@ export const UpdatesData = [
       "I am a budding programmer with a knack for coding. Data Science is my passion and Web Development along with UI/UX designing my hobby. I have beginner to intermediate level knowledge in Python, JavaScript, HTML, CSS, React.js, MySQL, Node.js, Figma and some video editing too.",
   },
 ];
+
+export const CertificatesData = [
+  {
+    url: 'www.acmthapar.com',
+    img: avatar,
+    title: "Web Development",
+  }
+]
