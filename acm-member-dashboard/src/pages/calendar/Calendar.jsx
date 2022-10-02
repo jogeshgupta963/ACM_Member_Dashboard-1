@@ -8,6 +8,7 @@ import './Calendar.css'
 
 const Calendar = () => {
   return (
+    <div className="calendar-container">
     <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             headerToolbar={{
@@ -28,6 +29,7 @@ const Calendar = () => {
             eventRemove={function(){}}
             */
           />
+          </div>
   )
 }
 

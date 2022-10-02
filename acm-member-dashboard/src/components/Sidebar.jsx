@@ -38,7 +38,7 @@ const Sidebar = () => {
       >
         {/* logo */}
 
-      <div className="menu">
+      <motion.div className="menu">
         {SidebarData.map((item, index) => {
           return (
             <div
@@ -69,6 +69,7 @@ const Sidebar = () => {
         <div className="menuItem">
           <UilSignOutAlt className="icon"/>
         </div>
+      </motion.div>
       </motion.div>
     </>
   );

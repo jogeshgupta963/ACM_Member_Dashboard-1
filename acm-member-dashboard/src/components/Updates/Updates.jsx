@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 
 const Updates = () => {
   const { user } = useSelector((state) => state.user);
-
+  console.log(user.socials)
   return (
     <div className="Updates">
       {UpdatesData.map((update) => {
@@ -47,6 +47,7 @@ const Updates = () => {
                     <a
                       href={user.socials[0]}
                       rel="noreferrer"
+                      target="_blank"
                       style={{ color: "black" }}
                     >
                       <AiFillGithub style={{ height: 40, width: 40 }} />
@@ -54,21 +55,22 @@ const Updates = () => {
                     <a
                       href={user.socials[1]}
                       rel="noreferrer"
+                      target="_blank"
                       style={{ color: "#00acee" }}
                     >
                       <AiFillTwitterCircle
-                        url={user.socials[2]}
+                        url={user.socials[1]}
                         style={{ height: 40, width: 40 }}
                       />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/tushar-chopra-960532215/"
+                      href={user.socials[2]}
                       rel="noreferrer"
                       target="_blank"
                       style={{ color: "#0077b5" }}
                     >
                       <AiFillLinkedin
-                        url="https://twitter.com/TusharC29050031"
+                        url={user.socials[2]}
                         style={{ height: 40, width: 40 }}
                       />
                     </a>
@@ -80,7 +82,9 @@ const Updates = () => {
           </>
         );
       })}
+      
     </div>
+    
   );
 };
 
