@@ -1,7 +1,7 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
-  "proxy": "http://ec2-13-233-96-1.ap-south-1.compute.amazonaws.com:5000/",
+  "proxy": "http://127.0.0.1:5000",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",

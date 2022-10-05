@@ -20,6 +20,7 @@ function Logins() {
         email: email.current.value,
         password: password.current.value,
       });
+      console.log(data);
       dispatch(getUser(data));
       navigate("/");
     } catch (err) {
@@ -56,8 +57,8 @@ function Logins() {
                   className="name"
                 />
               </div>
-              <div className="login-button">
-                <button onClick={handleSubmit}>Login</button>
+              <div onClick={handleSubmit} className="login-button">
+                <button>Login</button>
               </div>
 
               <p className="link">
