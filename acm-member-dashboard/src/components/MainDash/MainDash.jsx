@@ -51,7 +51,7 @@ const MainDash = () => {
 
   const fetchUser = async () => {
     const { data } = await axios.get("/auth/");
-    console.log(data);
+
     dispatch(getUser(data));
   };
 
