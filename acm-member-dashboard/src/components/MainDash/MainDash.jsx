@@ -6,15 +6,18 @@ import Announcements from "../Announcements/Announcements";
 import Github from "../Github/Github";
 
 import "./MainDash.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import axios from "axios";
+import Cookies from "js-cookie";
+import { Navigate } from "react-router-dom";
+import { getUser } from "../../redux/user";
 
 const MainDash = () => {
   const { user } = useSelector((state) => state.user);
   const [announcement, setAnnouncement] = useState([]);
   const [projects, setProjects] = useState(0);
-
+  const dispatch = useDispatch();
   let cardUp = [
     {
       value: "Announcement",
@@ -39,7 +42,6 @@ const MainDash = () => {
     try {
       const { data } = await axios.get("/announcement");
       const project = await axios.get("/project");
-      console.log(data);
       setAnnouncement(data);
       setProjects(project.data.length);
     } catch (err) {
@@ -47,23 +49,35 @@ const MainDash = () => {
     }
   };
 
+  const fetchUser = async () => {
+    const { data } = await axios.get("/auth/");
+    console.log(data);
+    dispatch(getUser(data));
+  };
+
   useEffect(() => {
     fetchCount();
+    fetchUser();
   }, []);
   return (
-    <div className="MainDash">
-      <h1 className="name-maindash" style={{ fontSize: "2rem" }}>
-        Hello {user.name}
-      </h1>
-      <h1 className="announcements">Announcements</h1>
-      {announcement.length > 0 && <Announcements announcement={announcement} />}
-      <h1 className="activeBootcamps">Active Bootcamps</h1>
-      <Cards />
-      <Github />
-      <h1 className="activities"></h1>
-      <FourCards dashData={cardUp} />
-      <TwoCards dashData={cardDown} />
-    </div>
+    <>
+      {!Cookies.get("ACM_THAPAR") && <Navigate to="/login" />}
+      <div className="MainDash">
+        <h1 className="name-maindash" style={{ fontSize: "2rem" }}>
+          Hello {user.name}
+        </h1>
+        <h1 className="announcements">Announcements</h1>
+        {announcement.length > 0 && (
+          <Announcements announcement={announcement} />
+        )}
+        <h1 className="activeBootcamps">Active Bootcamps</h1>
+        <Cards />
+        <Github />
+        <h1 className="activities"></h1>
+        <FourCards dashData={cardUp} />
+        <TwoCards dashData={cardDown} />
+      </div>
+    </>
   );
 };
 

@@ -10,18 +10,17 @@ import { useSelector } from "react-redux";
 
 const Updates = () => {
   const { user } = useSelector((state) => state.user);
-  console.log(user.socials)
   return (
     <div className="Updates">
-      {UpdatesData.map((update) => {
+      {UpdatesData.map((update, i) => {
         return (
           <>
-            <div className="banner">
+            <div key={i} className="banner">
               <img src={update.banner} alt="" />
             </div>
-            <div className="update">
+            <div key={i} className="update">
               <img src={update.img} alt="profile" />
-              <div className="noti">
+              <div key={i} className="noti">
                 <div className="details" style={{ marginBottom: "0.5rem" }}>
                   <span
                     className="name-updates"
@@ -82,9 +81,7 @@ const Updates = () => {
           </>
         );
       })}
-      
     </div>
-    
   );
 };
 
