@@ -6,7 +6,7 @@ import RightSide from "./components/RigtSide/RightSide";
 import Sidebar from "./components/Sidebar";
 import Logins from "./pages/login/Login";
 import Badges from "./pages/badges/Badges";
-
+import Projects from "./pages/projects/Projects";
 import { Outlet } from "react-router";
 import React from "react";
 import Calendar from "./pages/calendar/Calendar";
@@ -39,6 +39,7 @@ function App() {
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/badges" element={<Badges />} />
           <Route path="/announcements" element={<Announcements />} />
+          <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>
     </>

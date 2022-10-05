@@ -4,6 +4,8 @@ import { RepoCard } from "react-github-cards/dist/medium";
 import "react-github-cards/dist/medium.css";
 import "./RightSide.css";
 import Cookies from "js-cookie";
+import Contribution from "../Contribution/Contribution";
+import { UserCard } from 'react-ui-cards';
 // <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
 const RightSide = () => {
   return (
@@ -15,6 +17,7 @@ const RightSide = () => {
         {/* <div className="csCourse">
         <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
         </div> */}
+        <Contribution />
       </div>
     </>
   );
