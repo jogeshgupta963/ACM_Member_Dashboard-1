@@ -17,6 +17,7 @@ const RightSide = () => {
         {/* <div className="csCourse">
         <RepoCard username="ACM-Thapar" repo="CS_COURSE_GUIDE" />
         </div> */}
+        <Contribution />
       </div>
     </>
   );
