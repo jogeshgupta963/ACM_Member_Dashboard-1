@@ -41,7 +41,7 @@
   transition: all 300ms ease;
   border-radius: 0.7rem;
   font-size: 14px;
-  color: #3D70B2;
+  
 }
 
 .menuItem:hover {
@@ -57,6 +57,7 @@
 .active {
   background: #afcdf2;
   margin-left: 0;
+  color: black !important;
 }
 .active::before {
   content: "";
@@ -65,7 +66,9 @@
   background: #6caeff;
   margin-right: calc(1rem - 8px);
 }
-
+.active a{
+  color: black;
+}
 
 /* Tablets */
 @media screen and (max-width: 1200px) {
