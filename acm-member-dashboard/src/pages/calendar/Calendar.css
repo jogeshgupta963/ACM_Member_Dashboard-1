@@ -1,4 +1,5 @@
 .calendar-container{
-    width: 50%;
-    
+    width: 98%;
+    position: relative;
+    left: 40px;
 }
