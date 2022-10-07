@@ -18,7 +18,7 @@ const TwoCards = ({ dashData }) => {
               <TwoCard
                 title="count"
                 color={{
-                  backGround: "#1e1b5b",
+                  backGround: "#1e1f25",
                 }}
                 barValue={card.count}
                 value={card.value}

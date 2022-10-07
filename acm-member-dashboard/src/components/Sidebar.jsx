@@ -39,7 +39,7 @@ const Sidebar = () => {
         {/* logo */}
 
       <motion.div className="menu">
-        {SidebarData.map((item, index) => {
+        {SidebarData && SidebarData.map((item, index) => {
           return (
             <div
             className={selected === index ? "menuItem active" : "menuItem"}

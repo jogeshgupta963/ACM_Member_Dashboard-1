@@ -29,7 +29,7 @@ const Cards = () => {
               // time={card.time}
               // series={card.series}
 
-              color={{ backGround: "#1e1b5b" }}
+              color={{ backGround: "#1e1f25" }}
               barValue={70}
               value={card}
               png={AiFillGithub}
