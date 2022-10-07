@@ -3,9 +3,14 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: #1e1b5b;
-    height: 15%;
+    background-color: #1e1f25;
+    /* height: 15%; */
     color: rgb(184, 203, 248);
     border-radius: 10px;
     bottom: 4%;
+    padding: 5%;
+    transition: all 0.4s;
+}
+.gContainer:hover{
+    background-color: #000000;
 }
