@@ -20,6 +20,7 @@ import {
 // Recent Card Imports
 import img1 from "../imgs/Rectangle2.png";
 import avatar from "../imgs/Rectangle2.png";
+import jogesh from "../imgs/jogesh.png";
 //import img2 from "../imgs/img2.png";
 //import img3 from "../imgs/img3.png";
 import banner1 from "../imgs/banner1.jpg";
@@ -194,7 +195,7 @@ export const twoCardsData = [
 export const UpdatesData = [
   {
     banner: banner1,
-    img: img1,
+    img: jogesh,
     name: "Tushar Chopra",
     about:
       "I am a budding programmer with a knack for coding. Data Science is my passion and Web Development along with UI/UX designing my hobby. I have beginner to intermediate level knowledge in Python, JavaScript, HTML, CSS, React.js, MySQL, Node.js, Figma and some video editing too.",
@@ -205,6 +206,6 @@ export const CertificatesData = [
   {
     url: 'www.acmthapar.com',
     img: avatar,
-    title: "Web Development",
+    title: "Web Developer of the month",
   }
 ]

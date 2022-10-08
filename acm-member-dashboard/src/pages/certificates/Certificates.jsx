@@ -14,6 +14,7 @@ const Certificates = () => {
         {CertificatesData.map((certificate) => {
           return (
             <>
+            <div className="container-certificate">
               <UserCard
                 float
                 href={certificate.url}
@@ -21,53 +22,10 @@ const Certificates = () => {
                 avatar={certificate.img}
                 name={certificate.title}
                 className="card"
-                style={{ backgroundColor: "#7FA8E5" }}
+                style={{ backgroundColor: "rgb(30, 31, 37)",}}
               />
-              <UserCard
-                float
-                href={certificate.url}
-                header={header}
-                avatar={certificate.img}
-                name={certificate.title}
-                className="card"
-                style={{ backgroundColor: "#7FA8E5" }}
-              />
-              <UserCard
-                float
-                href={certificate.url}
-                header={header}
-                avatar={certificate.img}
-                name={certificate.title}
-                className="card"
-                style={{ backgroundColor: "#7FA8E5" }}
-              />
-              <UserCard
-                float
-                href={certificate.url}
-                header={header}
-                avatar={certificate.img}
-                name={certificate.title}
-                className="card"
-                style={{ backgroundColor: "#7FA8E5" }}
-              />
-              <UserCard
-                float
-                href={certificate.url}
-                header={header}
-                avatar={certificate.img}
-                name={certificate.title}
-                className="card"
-                style={{ backgroundColor: "#7FA8E5" }}
-              />
-              <UserCard
-                float
-                href={certificate.url}
-                header={header}
-                avatar={certificate.img}
-                name={certificate.title}
-                className="card"
-                style={{ backgroundColor: "#7FA8E5" }}
-              />
+              </div>
+              
             </>
           );
         })}

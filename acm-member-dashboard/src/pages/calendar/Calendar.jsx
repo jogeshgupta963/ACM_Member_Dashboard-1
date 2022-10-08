@@ -14,6 +14,7 @@ const Calendar = () => {
       {!Cookies.get("ACM_THAPAR") && <Navigate to="/login" />}
       <div className="calendar-container">
         <FullCalendar
+          
           plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
           headerToolbar={{
             left: "prev,next today",

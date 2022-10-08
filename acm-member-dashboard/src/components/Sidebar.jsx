@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-import Logo from "../imgs/logo.png";
+import Logo from "../imgs/acmlogo.png";
 import { UilSignOutAlt, UilUser  } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
@@ -24,6 +24,9 @@ const Sidebar = () => {
   const { user } = useSelector((state) => state.user);
   return (
     <>
+      <div className="pilllogo">
+        <img src={Logo} alt="logo" />
+      </div>
       <div
         className="bars"
         style={expanded ? { left: "60%" } : { left: "5%" }}

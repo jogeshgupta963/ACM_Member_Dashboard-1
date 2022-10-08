@@ -19,7 +19,9 @@ const Updates = () => {
               <img src={update.banner} alt="" />
             </div>
             <div key={i} className="update">
-              <img src={update.img} alt="profile" />
+              <div className="profileimg">
+                <img src={update.img} alt="profile" />
+              </div>
               <div key={i} className="noti">
                 <div className="details" style={{ marginBottom: "0.5rem" }}>
                   <span
