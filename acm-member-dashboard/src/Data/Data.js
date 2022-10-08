@@ -206,6 +206,6 @@ export const CertificatesData = [
   {
     url: 'www.acmthapar.com',
     img: avatar,
-    title: "Web Development",
+    title: "Web Developer of the month",
   }
 ]

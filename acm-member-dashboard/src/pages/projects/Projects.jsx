@@ -8,17 +8,17 @@ const Projects = () => {
     <div className = "container">
         <NewsHeaderCard
         className = "project-card"
-        href='https://github.com/nekonee'
+        href='https://github-visualizer.acmthapar.com/#/home'
         thumbnail={header}
-        title='Competitions Portal'
-        tags={['Python', 'React', () => (<i>Flask</i>)]} 
+        title='Github Visualizer'
+        tags={['Python', 'MongoDB' ,'Node.js', () => (<i>Flask</i>)]} 
         />
         <NewsHeaderCard
         className = "project-card"
-        href='https://github.com/nekonee'
+        href='https://eclipse.acmthapar.com/'
         thumbnail={header}
-        title='DSA Diary'
-        tags={['Python', 'MongoDB' ,'Node.js', () => (<i>Flask</i>)]} 
+        title='Eclipse Website'
+        tags={['Javascript', 'React.js' ,'HTML', () => (<i>CSS</i>)]} 
         />
         <NewsHeaderCard
         className = "project-card"
