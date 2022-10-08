@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     width: 85%;
-    background: rgb(11, 27, 55);
+    background: rgb(36 45 73 / 29%);
     box-shadow: 2px 2px 2px rgb(11, 27, 55);
     border-radius: 0.7rem;
     padding: 1rem;
@@ -23,17 +23,25 @@
     margin-top: 10px;
 }
 
-.update>img{    
+.profileimg{
+    background-color: blue;
     margin-left: 90px;
     margin-top: -50px;
     width: 5.2rem;
     height: 5.2rem;
+    border-radius: 100px;
+}
+
+.profileimg>img{    
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 100px;
 }
 
 .noti>div>span:nth-of-type(1){
     font-weight: bold;
     text-align: center;
-    color: #5596E6;
+    color: #5CB8E4;
 }
 
 .banner {
@@ -61,18 +69,18 @@
 .details > p {
     font-weight: bold;
     font-size: 20px;
-    color: #5596E6;
+    color: #5CB8E4;
 }
 
 .about-box{
     padding: 5px;
-    border: 1px solid #5596E6;
+    border: 1px solid #5CB8E4;
     border-radius: 10px;
 }
 
 textarea{
     resize: none;
-    color: #5596E6;
+    color: #5CB8E4;
     background: transparent;
 }
 

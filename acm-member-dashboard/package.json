@@ -22,6 +22,7 @@
     "js-cookie": "^3.0.1",
     "react": "^18.0.0",
     "react-apexcharts": "^1.4.0",
+    "react-calendar": "^3.9.0",
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^18.0.0",
     "react-github-calendar": "^3.3.1",
