@@ -26,6 +26,7 @@ const Calendar = () => {
           selectable={true}
           selectMirror={true}
           dayMaxEvents={true}
+          className = "calendar"
 
           // alternatively, use the `events` setting to fetch from a feed
           /* you can update a remote database when these fire:

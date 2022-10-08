@@ -1,5 +1,45 @@
-.calendar-container{
-    width: 98%;
-    position: relative;
-    left: 40px;
+.calendar-container {
+    margin-top: 20vh;
+    margin-left: 3.5vw;
+    width: 50vw;
+    height: auto;
+}
+
+.fc-button {
+    width: 10vh;
+}
+
+.fc-toolbar-title {
+    color: #fff;
+}
+
+.fc-col-header-cell-cushion {
+    color: #0b1b37;
+}
+
+@media screen and (max-width: 400px) {
+    .calendar-container {
+        margin: auto;
+        width: 80vw;
+        height: auto;
+    }
+
+    .fc-toolbar-title {
+        font-size: 5vw !important;
+    }
+
+    .fc-prev-button,
+    .fc-next-button {
+        width: 12vw !important;
+        height: auto !important;
+    }
+
+    .fc-icon {
+        font-size: 5vw !important;
+    }
+
+    .fc-today-button {
+        position: relative;
+        top: 10vh;
+    }
 }
