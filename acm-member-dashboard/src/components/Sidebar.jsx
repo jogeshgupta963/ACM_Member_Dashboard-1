@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../imgs/acmlogo.png";
-import { UilSignOutAlt, UilUser  } from "@iconscout/react-unicons";
+import { UilSignOutAlt, UilUser } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
@@ -41,38 +41,44 @@ const Sidebar = () => {
       >
         {/* logo */}
 
-      <motion.div className="menu">
-        {SidebarData && SidebarData.map((item, index) => {
-          return (
-            <div
-            className={selected === index ? "menuItem active" : "menuItem"}
-              key={index}
-              onClick={() => setSelected(index)}
-            >
-              <item.icon className="icon" />
-              <span ><Link to={item.link} style={{fontSize: '14px'}}>{item.heading}</Link></span>
-              
-            </div>
-          );
-        })}
-        <div className="admin  menuItem">
-        <UilUser />
-        <span>Admin</span>
-        </div>
-        {/* signoutIcon */}
-        <div style={{border: '0.1px solid #3D70B2',}}></div>
-        {user.bootcamps.map((item, index)=>{
-          return(
-            <div className="menuItem" key={index}>
-              <UilSignOutAlt className="icon" />
-              <span>{item}</span>
-            </div>
-          )
-        })}
-        <div className="menuItem">
-          <UilSignOutAlt className="icon"/>
-        </div>
-      </motion.div>
+        <motion.div className="menu">
+          {SidebarData &&
+            SidebarData.map((item, index) => {
+              return (
+                <div
+                  className={
+                    selected === index ? "menuItem active" : "menuItem"
+                  }
+                  key={index}
+                  onClick={() => setSelected(index)}
+                >
+                  <item.icon className="icon" />
+                  <span>
+                    <Link to={item.link} style={{ fontSize: "14px" }}>
+                      {item.heading}
+                    </Link>
+                  </span>
+                </div>
+              );
+            })}
+          <div className="admin  menuItem">
+            <UilUser />
+            <span>Admin</span>
+          </div>
+          {/* signoutIcon */}
+          <div style={{ border: "0.1px solid #3D70B2" }}></div>
+          {user.bootcamps.map((item, index) => {
+            return (
+              <div className="menuItem" key={index}>
+                <UilSignOutAlt className="icon" />
+                <a href={item.url}>{item.enrolled}</a>
+              </div>
+            );
+          })}
+          <div className="menuItem">
+            <UilSignOutAlt className="icon" />
+          </div>
+        </motion.div>
       </motion.div>
     </>
   );
