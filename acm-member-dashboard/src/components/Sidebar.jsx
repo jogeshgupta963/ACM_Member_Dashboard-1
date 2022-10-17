@@ -8,10 +8,12 @@ import { motion } from "framer-motion";
 import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Sidebar = () => {
   const [expanded, setExpaned] = useState(true);
   const [selected, setSelected] = useState(0);
+
   const sidebarVariants = {
     true: {
       left: "0",
@@ -22,6 +24,17 @@ const Sidebar = () => {
   };
 
   const { user } = useSelector((state) => state.user);
+
+  const signoutHandle = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("/auth/logout");
+      window.location.reload();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <div className="pilllogo">
@@ -71,12 +84,14 @@ const Sidebar = () => {
             return (
               <div className="menuItem" key={index}>
                 <UilSignOutAlt className="icon" />
-                <a href={item.url}>{item.enrolled}</a>
+                <a target="__blank" href={item.url}>
+                  {item.enrolled}
+                </a>
               </div>
             );
           })}
           <div className="menuItem">
-            <UilSignOutAlt className="icon" />
+            <UilSignOutAlt onClick={signoutHandle} className="icon" />
           </div>
         </motion.div>
       </motion.div>
