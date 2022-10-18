@@ -1,27 +1,26 @@
-import "./Login.css";
+import "../login/Login.css";
 import acmlogo from "../../imgs/acmlogo.png";
 import axios from "axios";
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { getUser } from "../../redux/user";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 
-function Logins() {
+function Register() {
   const email = useRef("");
-  const password = useRef("");
-
+  const name = useRef("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/auth/login", {
+      const { data } = await axios.post("/auth/", {
+        name: name.current.value,
         email: email.current.value,
-        password: password.current.value,
       });
       console.log(data);
-      dispatch(getUser(data));
+      //   dispatch(getUser(data));
       navigate("/");
     } catch (err) {
       console.log(err);
@@ -40,7 +39,15 @@ function Logins() {
               </div>
             </div>
             <div>
-              <h1>Login Page</h1>
+              <h1>Register Page</h1>
+              <div className="inputs">
+                <input
+                  ref={name}
+                  type="text"
+                  placeholder="Name(Keep it formal)"
+                  className="name"
+                />
+              </div>
               <div className="inputs">
                 <input
                   ref={email}
@@ -49,23 +56,13 @@ function Logins() {
                   className="name"
                 />
               </div>
-              <div className="second-input inputs">
-                <input
-                  ref={password}
-                  type="password"
-                  placeholder="Password"
-                  className="name"
-                />
-              </div>
+
               <div onClick={handleSubmit} className="login-button">
-                <button>Login</button>
+                <button>Register</button>
               </div>
 
               <p className="link">
-                <Link to="/register">Do'nt Have an Account? Register</Link>
-              </p>
-              <p className="link">
-                <Link to="/forgotPassword">Forgot password?</Link>
+                <a href="/">Forgot password?</a>
               </p>
             </div>
           </div>
@@ -75,4 +72,4 @@ function Logins() {
   );
 }
 
-export default Logins;
+export default Register;
