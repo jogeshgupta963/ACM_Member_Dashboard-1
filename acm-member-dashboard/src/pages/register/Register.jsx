@@ -15,13 +15,15 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/auth/", {
-        name: name.current.value,
-        email: email.current.value,
-      });
-      console.log(data);
-      //   dispatch(getUser(data));
-      navigate("/");
+      if (email.current.value.includes("@thapar.edu")) {
+        const { data } = await axios.post("/auth/", {
+          name: name.current.value,
+          email: email.current.value,
+        });
+        console.log(data);
+        dispatch(getUser(data));
+        navigate("/");
+      }
     } catch (err) {
       console.log(err);
     }

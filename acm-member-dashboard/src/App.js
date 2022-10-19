@@ -16,6 +16,7 @@ import Certificates from "./pages/certificates/Certificates";
 import Register from "./pages/register/Register";
 import Password from "./pages/ResetLink/Password";
 import ForgotPass from "./pages/ForgotPassword/ForgotPass";
+import Settings from "./pages/Settings/Settings";
 
 function Nav() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/badges" element={<Badges />} />
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
       </Routes>
     </>

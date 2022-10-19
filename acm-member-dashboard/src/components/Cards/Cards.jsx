@@ -20,20 +20,22 @@ const Cards = () => {
         user.bootcamps.map((card, id) => {
           return (
             <div className="parentContainer" key={id}>
-              <Card
-                // title={card.title}
-                // color={card.color}
-                // barValue={card.barValue}
-                // value={card.value}
-                // png={card.png}
-                // time={card.time}
-                // series={card.series}
+              <a href={card.url} target="__blank">
+                <Card
+                  // title={card.title}
+                  // color={card.color}
+                  // barValue={card.barValue}
+                  // value={card.value}
+                  // png={card.png}
+                  // time={card.time}
+                  // series={card.series}
 
-                color={{ backGround: "#1e1f25" }}
-                barValue={70}
-                value={card.enrolled}
-                png={AiFillGithub}
-              />
+                  color={{ backGround: "#1e1f25" }}
+                  barValue={70}
+                  value={card.enrolled}
+                  png={AiFillGithub}
+                />
+              </a>
             </div>
           );
         })}
