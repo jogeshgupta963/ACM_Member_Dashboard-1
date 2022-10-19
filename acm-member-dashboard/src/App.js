@@ -13,6 +13,10 @@ import Calendar from "./pages/calendar/Calendar";
 import Announcements from "./pages/announcements/Announcements";
 
 import Certificates from "./pages/certificates/Certificates";
+import Register from "./pages/register/Register";
+import Password from "./pages/ResetLink/Password";
+import ForgotPass from "./pages/ForgotPassword/ForgotPass";
+import Settings from "./pages/Settings/Settings";
 
 function Nav() {
   return (
@@ -33,6 +37,9 @@ function App() {
     <>
       <Routes>
         <Route exact path="/login" element={<Logins />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/forgotPassword" element={<Password />} />
+        <Route exact path="/user/resetPassword/:id" element={<ForgotPass />} />
         <Route element={<Nav />}>
           <Route path="/" element={<MainDash />} exact />
           <Route path="/calendar" element={<Calendar />} />
@@ -40,6 +47,7 @@ function App() {
           <Route path="/badges" element={<Badges />} />
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
       </Routes>
     </>

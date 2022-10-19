@@ -4,39 +4,41 @@ import { cardsData } from "../../Data/Data";
 
 // Sidebar imports
 // import {
-  
+
 //   UilUsdSquare
 // } from "@iconscout/react-unicons";
 
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub } from "react-icons/ai";
 import Card from "../Card/Card";
 import { useSelector } from "react-redux";
 
 const Cards = () => {
-  const {user} = useSelector(state=>state.user)
+  const { user } = useSelector((state) => state.user);
   return (
     <div className="Cards">
-      {user.bootcamps && user.bootcamps.map((card, id) => {
-        return (
-          <div className="parentContainer" key={id}>
-            <Card
+      {user.bootcamps &&
+        user.bootcamps.map((card, id) => {
+          return (
+            <div className="parentContainer" key={id}>
+              <a href={card.url} target="__blank">
+                <Card
+                  // title={card.title}
+                  // color={card.color}
+                  // barValue={card.barValue}
+                  // value={card.value}
+                  // png={card.png}
+                  // time={card.time}
+                  // series={card.series}
 
-              // title={card.title}
-              // color={card.color}
-              // barValue={card.barValue}
-              // value={card.value}
-              // png={card.png}
-              // time={card.time}
-              // series={card.series}
-
-              color={{ backGround: "#1e1f25" }}
-              barValue={70}
-              value={card}
-              png={AiFillGithub}
-            />
-          </div>
-        );
-      })}
+                  color={{ backGround: "#1e1f25" }}
+                  barValue={70}
+                  value={card.enrolled}
+                  png={AiFillGithub}
+                />
+              </a>
+            </div>
+          );
+        })}
     </div>
   );
 };
