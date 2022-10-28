@@ -22,7 +22,7 @@ const Certificates = () => {
                   float
                   href={certificate.url}
                   header={header}
-                  avatar={avatar}
+                  // avatar={avatar}
                   name={certificate.title}
                   className="card"
                   style={{ backgroundColor: "rgb(30, 31, 37)" }}

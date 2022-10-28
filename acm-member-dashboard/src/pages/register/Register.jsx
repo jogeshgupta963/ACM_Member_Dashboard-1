@@ -64,7 +64,7 @@ function Register() {
               </div>
 
               <p className="link">
-                <a href="/">Forgot password?</a>
+                <a href="/forgotPassword">Forgot password?</a>
               </p>
             </div>
           </div>

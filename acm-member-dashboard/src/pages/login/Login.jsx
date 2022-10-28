@@ -62,7 +62,7 @@ function Logins() {
               </div>
 
               <p className="link">
-                <Link to="/register">Do'nt Have an Account? Register</Link>
+                <Link to="/register">Don't Have an Account? Register</Link>
               </p>
               <p className="link">
                 <Link to="/forgotPassword">Forgot password?</Link>
